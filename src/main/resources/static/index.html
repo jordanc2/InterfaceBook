@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InterfaceBook</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/standard.css">
+<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<header>
+		<input type="search" id="search" placeholder="Search"/>
+		<button id="add-post" type="button">Add Post</button>
+	</header>
+	<div id="add-post-popup">
+		<textarea></textarea>
+		<button id="delete-post" type="button">Delete</button>
+		<button id="close-post" type="button">Cancel</button>
+		<button id="save-post" type="button">Save</button>
+	</div>
+	<div id="add-comment-popup">
+		<textarea></textarea>
+		<button id="delete-comment" type="button">Delete</button>
+		<button id="close-comment" type="button">Cancel</button>
+		<button id="save-comment" type="button">Save</button>
+	</div>
+	<main>
+		<div id="post-template">
+			<img class="avatar" src=""/>
+			<div class="post-content">
+				<span class="username"></span>
+				<time></time>
+				<p class="post-text"></p>
+				<a href="" class="comment-count"></a><i class="far fa-comment-alt add-comment"></i>
+				<div class="comment-template">
+					<span class="comment-text"></span> - <span class="comment-user"></span>
+				</div>
+				<i class="edit-post fas fa-edit"></i>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+</html>

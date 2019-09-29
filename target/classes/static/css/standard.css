@@ -1,0 +1,85 @@
+html {
+	font-family: serif;
+	font-size: large;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	background-color: #f0f0f0;
+	color: black;
+}
+header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em;
+	background-color: #25AAE1;
+	color: white;
+	text-align: center;
+}
+main {
+	padding: 1em;
+	width: 50ch;
+	background-color: #F1592A;
+	color: white;
+	margin: auto;
+	margin-top: 2.2em;
+	box-shadow: .5em .5em .5em #606060;
+}
+#post-template {
+	display: none;
+}
+.post {
+	position: relative;
+	padding: 1em;
+	display: flex;
+	background-color: white;
+	color: black;
+	margin-bottom: .1em;
+}
+.post-text {
+	margin-bottom: 0;
+}
+#add-post-popup, #add-comment-popup {
+	width: 50ch;
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.2em;
+	background-color: #8DC63F;
+	display: none;
+}
+#add-post-popup textarea, #add-comment-popup textarea {
+	display: block;
+	max-width: 100%;
+	min-width: 100%;
+}
+.show-add-popup {
+	display: block !important;
+}
+.show-add-popup + main {
+	margin-top: 0;
+}
+.edit-post {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.8em;
+}
+.comment-count {
+	color: #808080;
+	font-size: 0.8em;
+}
+#add-comment-popup {
+	margin-top: 0;
+	width: auto;
+	margin-bottom: 0.1em;
+}
+.comment-template {
+	display: none;
+}
+.add-comment {
+	margin-left: 5px;
+}
